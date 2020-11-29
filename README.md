@@ -1,7 +1,7 @@
 # Gooey Video
 
 <p align="center">
-    <img src="C:\Users\Chris\Documents\visual-FFMPEG\images\title.PNG" />
+    <img src="https://github.com/chriskiehl/GooeyVideo/raw/main/images/title.PNG" />
 </p>
 
 
@@ -19,24 +19,25 @@ This is not aimed at being a general purpose UI for FFMPEG. Its library aspirati
 
 ## Installation and Quick Start 
 
+You can `pip install` the project from source. _Be warned_, the [FFMPEG](https://ffmpeg.org/) binary is attached, which makes the installation footprint a whopping 70mb! 
+
 ```
-pip install gooey-video
-python -m gooey-video
+pip install git+https://github.com/chriskiehl/GooeyVideo.git
 ```
 
 ## Demos 
 
 Screen Recording: 
 
-<p align="center">
-    <img src="C:\Users\Chris\Documents\visual-FFMPEG\images\title.PNG" />
+<p align="center" width="400">
+    <img src="https://github.com/chriskiehl/GooeyVideo/raw/main/images/demo-screen-recording.gif" />
 </p>
 
 
 Triming / Cropping / Scaling: 
 
 <p align="center">
-    <img src="C:\Users\Chris\Documents\visual-FFMPEG\images\title.PNG" />
+    <img src="https://github.com/chriskiehl/GooeyVideo/raw/main/images/demo-trim-crop-and-scale.gif" />
 </p>
 
  
