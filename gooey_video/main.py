@@ -8,7 +8,7 @@ from gooey_video import trim_crop
 from gooey_video import watermark
 
 
-@Gooey(program_name='FFGooey: FFMPEG wrapper')
+@Gooey(program_name='Gooey Video Tools')
 def main():
     parser = GooeyParser(description='A collection of the FFMPEG commands I most often use (and forget)')
     subparsers = parser.add_subparsers(help='commands', dest='command')
