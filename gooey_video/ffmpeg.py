@@ -3,8 +3,7 @@ import subprocess
 
 def get_path_to():
     return os.path.join(
-        os.path.dirname(__file__),
-        '..',
+        os.path.dirname(os.path.abspath(__file__)),
         'executables',
         'ffmpeg.exe'
     )

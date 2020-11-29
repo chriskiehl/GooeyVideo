@@ -5,7 +5,7 @@ Source: https://stackoverflow.com/questions/6766333/capture-windows-screen-with-
 """
 from gooey import options
 
-import ffmpeg
+from gooey_video import ffmpeg
 
 
 def add_parser(parent):

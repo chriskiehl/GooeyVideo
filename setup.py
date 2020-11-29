@@ -13,6 +13,8 @@ setuptools.setup(
     long_description_content_type="text/markdown",
     url="https://github.com/chriskiehl/GooeyVideo",
     include_package_data=True,
+    data_files=[('gooey_video/executables', ['gooey_video/executables/ffmpeg.exe'])],
+    install_requires=['gooey@git+git://github.com/chriskiehl/Gooey/@1.0.7-wip'],
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",

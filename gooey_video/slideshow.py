@@ -1,6 +1,6 @@
 from gooey import options
 
-import ffmpeg
+from gooey_video import ffmpeg
 
 
 def add_parser(parent):

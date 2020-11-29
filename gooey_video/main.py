@@ -1,10 +1,11 @@
+from __future__ import absolute_import
 from gooey import Gooey, GooeyParser
 
-import gif
-import screen_recorder
-import slideshow
-import trim_crop
-import watermark
+from gooey_video import gif
+from gooey_video import screen_recorder
+from gooey_video import slideshow
+from gooey_video import trim_crop
+from gooey_video import watermark
 
 
 @Gooey(program_name='FFGooey: FFMPEG wrapper')

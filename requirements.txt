@@ -1,0 +1,1 @@
+git+git://github.com/chriskiehl/Gooey/tree/1.0.7-wip

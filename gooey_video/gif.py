@@ -6,7 +6,7 @@ Source: http://blog.pkh.me/p/21-high-quality-gif-with-ffmpeg.html
 from gooey import Gooey, GooeyParser, options
 import subprocess
 
-import ffmpeg
+from gooey_video import ffmpeg
 
 
 def add_parser(parent):
