@@ -59,11 +59,11 @@ def add_parser(parent):
             max=1080
         ))
 
-    asdf = parser.add_argument_group('Options', gooey_options=options.ArgumentGroup(
+    recorder_options = parser.add_argument_group('Options', gooey_options=options.ArgumentGroup(
         show_border=True,
 
     ))
-    asdf.add_argument(
+    recorder_options.add_argument(
         '--framerate',
         type=int,
         default=10,
@@ -74,13 +74,13 @@ def add_parser(parent):
             increment_size=1,
         ))
 
-    asdf.add_argument(
+    recorder_options.add_argument(
         '--show_region',
         choices=['0', '1'],
         default='1',
         help='Show the Region being recorded')
 
-    asdf.add_argument(
+    recorder_options.add_argument(
         '--duration',
         help='How long to record the screen (in seconds)',
         metavar='Duration',
@@ -111,9 +111,12 @@ def add_parser(parent):
         metavar='Overwrite existing',
         help='Overwrite the output video if it already exists?',
         action='store_const',
-        default=True,
         const='-y',
-        widget='CheckBox')
+        widget='CheckBox',
+        gooey_options=options.CheckBox(
+            initial_value=True
+        )
+    )
 
 
 

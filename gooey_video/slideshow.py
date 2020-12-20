@@ -46,7 +46,11 @@ def add_parser(parent):
         help='Overwrite the output video if it already exists?',
         action='store_const',
         const='-y',
-        widget='CheckBox')
+        widget='CheckBox',
+        gooey_options=options.CheckBox(
+            initial_value=True
+        )
+    )
 
     settings = parser.add_argument_group('Settings', gooey_options=options.ArgumentGroup(
         show_border=True
